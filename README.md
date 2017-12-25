@@ -98,7 +98,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 Any issues, feedback, suggestions or questions please use issue tracker [here](https://github.com/php-cpm/http-basic-auth-guard/issues).
 
 ## Security
-If you discover any security related issues, please email arubacao@gmail.com instead of using the issue tracker.
+If you discover any security related issues, please email zouyi@leying365.com instead of using the issue tracker.
 
 ## License
 The MIT License (MIT).
