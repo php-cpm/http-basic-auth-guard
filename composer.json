@@ -1,27 +1,28 @@
 {
-    "name": "arubacao/http-basic-auth-guard",
+    "name": "php-cpm/http-basic-auth-guard",
     "description": "HTTP Basic Auth Guard for Lumen 5.2",
     "keywords": [
         "lumen",
         "lumen 5.2",
+        "bearer token",
         "http basic auth guard lumen",
         "http basic auth guard lumen 5.2",
         "http basic auth guard",
         "http basic auth",
         "http basic authentication"
     ],
-    "homepage": "https://github.com/arubacao/http-basic-auth-guard",
+    "homepage": "https://github.com/php-cpm/http-basic-auth-guard",
     "license": "MIT",
     "authors": [
         {
-            "name": "Christopher Lass",
-            "email": "arubacao@gmail.com",
+            "name": "zouyi",
+            "email": "zouyi@leying265.com",
             "role": "Developer"
         }
     ],
     "support": {
-        "issues": "https://github.com/arubacao/http-basic-auth-guard/issues",
-        "source": "https://github.com/arubacao/http-basic-auth-guard"
+        "issues": "https://github.com/php-cpm/http-basic-auth-guard/issues",
+        "source": "https://github.com/php-cpm/http-basic-auth-guard"
     },
     "require": {
         "php": ">=5.6.0",
@@ -35,7 +36,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Arubacao\\BasicAuth\\": "src"
+            "Phpcpm\\BasicAuth\\": "src"
         }
     },
     "autoload-dev": {

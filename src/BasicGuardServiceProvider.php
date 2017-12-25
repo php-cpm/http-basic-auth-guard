@@ -3,12 +3,13 @@
 /**
  * This file is part of Http Basic Auth Guard.
  *
+ * modified by zouyi from his version:
  * (c) Christopher Lass <arubacao@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace Arubacao\BasicAuth;
+namespace Phpcpm\BasicAuth;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -37,11 +38,9 @@ class BasicGuardServiceProvider extends ServiceProvider
                 $app['auth']->createUserProvider($config['provider']),
                 $app['request']
             );
-
             if (method_exists($guard, 'setDispatcher')) {
                 $guard->setDispatcher($this->app['events']);
             }
-
             if (method_exists($guard, 'setRequest')) {
                 $guard->setRequest($this->app->refresh('request', $guard, 'setRequest'));
             }
