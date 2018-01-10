@@ -127,7 +127,7 @@ class BasicGuard implements Guard, SupportsBasicAuth
      *
      * @return \Symfony\Component\HttpFoundation\Response|null
      */
-    public function basic($field = 'api_secret', $extraConditions = [])
+    public function basic($field = 'api_key', $extraConditions = [])
     {
         return $this->onceBasic($field, $extraConditions);
     }
@@ -140,7 +140,7 @@ class BasicGuard implements Guard, SupportsBasicAuth
      *
      * @return \Symfony\Component\HttpFoundation\Response|null
      */
-    public function onceBasic($field = 'api_secret', $extraConditions = [])
+    public function onceBasic($field = 'api_key', $extraConditions = [])
     {
         $credentials = $this->getBasicCredentials($this->getRequest(), $field);
         if (! $this->once(array_merge($credentials, $extraConditions))) {
